@@ -1,0 +1,30 @@
+#intro-h2{
+    color:blue;
+}
+
+.basic{
+    color: rgb(196, 196, 160);
+}
+/* p{
+    color: chocolate;
+} */
+/* *{
+    color: crimson;
+} */
+label[for="password"]{
+    color: dodgerblue;
+}
+input[type="text"]{
+    color: red;
+}
+label[for="user-name"]{
+    color: pink;
+}
+button:hover{
+    color: yellow;
+    background-color: black;
+}
+p::first-letter{
+    color: red;
+    font-size: 100px;
+}

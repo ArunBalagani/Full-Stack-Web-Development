@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- <style>
+        /* selector-name{
+            property:value;
+        } */
+        #intro-h2{
+            color:blue;
+        }
+
+        .basic{
+            color: rgb(196, 196, 160);
+        }
+        /* p{
+            color: chocolate;
+        } */
+        /* *{
+            color: crimson;
+        } */
+        label[for="password"]{
+            color: dodgerblue;
+        }
+        input[type="text"]{
+            color: red;
+        }
+        label[for="user-name"]{
+            color: pink;
+        }
+        button:hover{
+            color: yellow;
+            background-color: black;
+        }
+        p::first-letter{
+            color: red;
+            font-size: 100px;
+        }
+    </style> -->
+</head>
+<body>
+    <h1 style="color: red;">The Basics of Web Development</h1>
+    <hr>
+    <!-- <h2 type-of-selector = "selector-name">Introduction</h2> -->
+    <h2 id = "intro-h2">Introduction</h2>
+
+    <p> <b> Web development </b>is a crucial skill in the modern digital age. It involves creating websites and applications for the internet.</p>
+    <h3 class="basic">HTML Basics</h3>
+    <p >
+HTML stands for HyperText Markup Language. It is used to create the structure of web pages.
+</p>
+    <h4>Text Formatting </h4>
+    <p>
+        HTML provides several tags to format text. For instance, text can be
+       <u> underlined for emphasis or hyperlinks</u>. In chemical formulas, subscript
+        text such as H<sub>2</sub>O is used to represent water. Conversely, superscript text
+        like x<sup>2</sup> is common in mathematical expressions. <br> <br> To highlight important
+        words, you can use bold text to make them stand out. Finally, inserting a
+        line break without starting a new paragraph is possible, allowing text to
+        continue on a new line. This is an example of a new line using a line
+        break.
+    </p>
+    <h5 class="basic">List</h5>
+    <h6>There are two main types of List</h6>
+    <form action="">
+        <fieldset>
+            <legend>Personal Details</legend>
+       
+            <label for="user-name">User Name :</label>
+            <input type="text" id="user-name" name="user-name" 
+            placeholder="Please enter your name" value="" >
+                <br><br>
+            <label for="password" name="password" value="">Password:</label>
+                <input type="password">
+                <p>Gender:</p>
+                <input type="radio" name="gender"><label for="">Male</label>
+                <input type="radio" name="gender"><label for="">Female</label>
+                <input type="radio" name="gender"><label for="">Others</label>
+                <p>Hobbies:</p>
+                <input type="checkbox"><label for="">Reading</label>
+                <input type="checkbox"><label for="">Travelling</label>
+                <p>Choose Your Country:</p>
+
+                <select name="" id="">
+                    <option value="">All</option>
+                    <option value="">India</option>
+                    <option value="">United States</option>
+                    <option value="">United Kingdom</option>
+                </select>
+                <p>Comments:</p>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <br>
+                <input type="submit">
+                <button >Reset</button>
+        </fieldset>
+    </form>
+    <!-- <h1>iframe</h1> -->
+    <!-- <a href="https://www.youtube.com/watch?v=z770rngiSW8" target="_blank" title="VS code Installation Video">Hema Coding School Channel</a> -->
+    <!-- <br><br> -->
+    <!-- <iframe src="https://www.w3schools.com/" frameborder="0"></iframe>
+    <iframe src="https://www.w3schools.com" title="W3Schools Free Online Web Tutorials"></iframe> -->
+    <!-- <iframe src="../Day 04/form-image-audio-video.html" frameborder="2" width="600px" height="600px"></iframe> -->
+    <!-- <br> -->
+    <!-- <object data="../Day 03/Day 03 Text Formate Structure.pdf" type="" width="600px" height="600px"></object> -->
+    <!-- <embed src="../Day 04/Bank.mp4" type="" width="600px" height="600px"> -->
+<!-- <br> -->
+
+</body>
+</html>
