@@ -1,0 +1,35 @@
+h1#title {
+    color: #D2691E;
+    font-size: 36px;
+}
+
+h2.section-title {
+    color: #000080;
+    font-size: 28px;
+}
+
+.highlight {
+    color: green;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+p .italic-blue {
+    color: blue;
+}
+
+img {
+    border: 1px solid black;
+}
+
+
+
+p .golden-text {
+    color: gold;
+}
+
+p .blue-text {
+    color: blue;
+}
