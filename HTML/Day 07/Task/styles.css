@@ -1,0 +1,100 @@
+/* Reset margins and paddings */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Header styling */
+header {
+    width: 100%;
+    height: 70px;
+    background-color: #333333;
+    position: relative;
+    text-align: center;
+    line-height: 70px; /* Centers text vertically */
+}
+
+header h1 {
+    color: #fff;
+    font-size: 24px;
+}
+
+/* Container for aside and main */
+.container {
+    position: relative;
+    margin-top: 0px;
+}
+
+/* Sidebar styling */
+aside {
+    background-color: #dc6868;
+    width: 30%;
+    height: 50px;
+    position: absolute;
+    left: 50px;
+    top: 0px;
+    display: block;
+    color: white;
+}
+
+aside h1 {
+    font-size: 16px;
+    padding: 10px;
+    color: black;
+}
+
+/* Main content styling */
+main {
+    background-color: #4d5bf3;
+    width: 60%;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    margin-left: -20%; /* Center main content horizontally */
+    top: 0px;
+    display: block;
+    
+}
+
+main h1 {
+    font-size: 16px;
+    padding: 10px;
+    color: black;
+}
+
+/* Footer styling */
+footer {
+    width: 100%;
+    height: 50px;
+    background-color: #333333;
+    position: relative;
+    text-align: center;
+    line-height: 50px; /* Centers text vertically */
+    margin-top: 50px; /* Gives space after main content */
+}
+
+footer h1 {
+    color: #fff;
+    font-size: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    aside, main {
+        background-color: chartreuse;
+        position: relative;
+        width: 90%;
+        margin-left: 5%;
+        top: auto;
+        left: auto;
+        margin-top: 10px;
+        padding: 10px;
+       
+    }
+    
+
+    footer {
+        margin-top: 5px;
+    }
+}
