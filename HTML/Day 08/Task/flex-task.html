@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Task </title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        header {
+            width: 100%;
+            height: 70px;
+            background-color: #333333;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+        header h1 {
+            color: #fff;
+            font-size: 24px;
+            margin-left: 10px;
+        }
+
+        nav {
+            display: flex;
+            list-style-type: none;
+            gap: 30px;
+        }
+        nav li {
+            color: #fff;
+            text-decoration: none;
+        }
+        input {
+            padding: 5px;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+   <!-- Flex Task -->
+
+    <header>
+
+        <!-- Logo -->
+        <h1>Logo</h1>
+
+        <!-- Navigation Menu -->
+        <nav>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+        </nav>
+
+        <!-- Search Bar -->
+         <input type="search" placeholder="Search...">
+
+    </header>
+</body>
+</html>

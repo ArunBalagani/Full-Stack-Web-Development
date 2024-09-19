@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #flex-container{
+            border: 2px solid red;
+            background-color: aqua;
+            display: flex;
+            height: 400px;
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column-reverse; */
+            /* justify-content: flex-start; */
+            /* justify-content: flex-end; */
+            /* justify-content: center; */
+            /* justify-content: space-between; */
+            /* justify-content: space-around; */
+            /* justify-content: space-evenly; */
+            /* flex-wrap: wrap; */
+            /* flex-wrap: wrap-reverse; */
+            /* align-items: center; */
+            /* align-items: baseline; */
+
+
+
+
+        }
+        .flex-item1,
+        .flex-item2,
+        .flex-item3,
+        .flex-item4,
+        .flex-item5
+        {
+            border: 2px solid;
+            background-color: blue;
+            padding: 40px;
+        }
+        .flex-item1{
+            /* flex-grow: 1; */
+
+        }
+        .flex-item2{
+            /* order: 2 */
+            align-self: center;
+        }
+        .flex-item3{
+            /* flex-grow: 1; */
+            padding: 50px;
+        }
+        .flex-item4{
+            /* order: 1; */
+        }
+        .flex-item5{
+            /* flex-grow: 0.5; */
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="flex-container">
+        <div class="flex-item1">1</div>
+        <div class="flex-item2">2</div>
+        <div class="flex-item3">3</div>
+        <div class="flex-item4">4</div>
+        <div class="flex-item5">5</div>
+       
+    </div>
+</body>
+</html>
