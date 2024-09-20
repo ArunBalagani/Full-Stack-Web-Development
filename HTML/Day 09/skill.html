@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      header {
+        background-color: rgb(164, 159, 159);
+        padding: 20px;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+      }
+      nav div div {
+        display: inline;
+        background-color: black;
+        color: white;
+        padding: 10px;
+        border-radius: 10px;
+      }
+      #marquee {
+        color: yellow;
+        flex-grow: 0.5;
+      }
+      main{
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-evenly;
+        background-color: rgb(141, 131, 131);
+        padding:80px 0px ;
+        color: rgb(246, 235, 235);
+      }
+      section{
+        border: 2px solid black;
+        padding: 10px;
+        border-radius: 10px;
+        margin: 20px;
+        transition: transform 0.5s;
+      }
+      section:hover{
+        background-color: white;
+        color:black;
+        transform: scale(1.2);
+      }
+      footer{
+        background-color: rgb(92, 88, 88);
+        padding: 25px;
+        text-align: center;
+        color: white;
+      }
+      a{
+        text-decoration: none;
+        color: white;
+      }
+      a:hover{
+        color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div>
+          <div><a href="./home.html">Home</a></div>
+          <div><a href="./skill.html">Skills</a></div>
+          <div> <a href="./project.html">Project</a></div>
+          <div> <a href="./contact.html">Contact</a></div>
+        </div>
+        <div id="marquee">
+          <marquee behavior="" direction=""> Hema Coding School</marquee>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h2>HTML</h2>
+        <article>
+          Learned the fundamentals of HTML for building the structure of web
+          pages
+        </article>
+      </section>
+      <section>
+        <h2>CSS</h2>
+        <article>
+          Explored the styling and layout capabilities of CSS to enhance your
+          web designs.
+        </article>
+      </section>
+      <section>
+        <h2>JavaScript</h2>
+        <article>
+          Mastered the scripting language for dynamic and interactive web
+          development.
+        </article>
+      </section>
+      <section>
+        <h2>React</h2>
+        <article>
+          Build modern, efficient, and scalable user interfaces with the React
+          library.
+        </article>
+      </section>
+      <section>
+        <h2>Node</h2>
+        <article>
+          Learn server-side JavaScript with Node.js for building scalable
+          network applications.
+        </article>
+      </section>
+      <section>
+        <h2>Mongo DB</h2>
+        <article>
+          Explore the NoSQL database for building scalable and flexible
+          applications.
+        </article>
+      </section>
+    </main>
+    <footer>@copyright, This is portfolio</footer>
+
+  </body>
+</html>

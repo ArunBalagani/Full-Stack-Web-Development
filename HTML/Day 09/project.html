@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          header {
+        background-color: rgb(164, 159, 159);
+        padding: 20px;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+      }
+      nav div div {
+        display: inline;
+        background-color: black;
+        color: white;
+        padding: 10px;
+        border-radius: 10px;
+      }
+      #marquee {
+        color: yellow;
+        flex-grow: 0.5;
+      }
+      main{
+        /* border: 2px solid red; */
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(60, 59, 59);
+        color: white;
+        padding: 100px;
+      }
+      section{
+        /* border: 2px solid black; */
+        padding: 10px;
+        border-radius: 10px;
+        margin: 20px;
+        transition: transform 0.5s;
+      }
+      section h2 {
+        border: 2px solid black;
+        display: inline;
+        font-size: larger;
+      }
+      section article {
+      border: 2px solid black;
+      padding: 10px;
+      }
+      section:hover{
+        background-color: white;
+        color:black;
+        transform: scale(1.0);
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+          <div>
+            <div><a href="./home.html">Home</a></div>
+            <div><a href="./skill.html">Skills</a></div>
+            <div> <a href="./project.html">Project</a></div>
+            <div> <a href="./contact.html">Contact</a></div>
+          </div>
+          <div id="marquee">
+            <marquee behavior="" direction=""> Hema Coding School</marquee>
+          </div>
+        </nav>
+      </header>
+    
+      
+       <main>
+         
+         <!-- Add your projects here -->
+          <section>
+            <h2>Project 1 : E-commerce Platform </h2>
+            <article>
+            <p>Developed a full-stack MERN e-commerce platform with user authentication, product listing, and cart functionality.</p>
+            <p>Integrated payment gateways and managed orders using MongoDB for the back-end data store.</p>
+            </article>
+          </section>
+          <section>
+            <h2>Project 2 : Blog Website</h2>
+            <article>
+              <p>Built a blog application using React for the front-end and Node.js for the back-end.</p>
+              <p>Implemented a content management system (CMS) with role-based access control for admins and users.</p>
+            </article>
+           
+          </section>
+         
+          <!-- Add more sections as needed -->
+       </main>
+</body>
+</html>
