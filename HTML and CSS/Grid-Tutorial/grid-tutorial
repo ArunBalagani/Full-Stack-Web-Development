@@ -1,0 +1,203 @@
+Here’s a comprehensive list of all CSS Grid properties and their possible values:
+
+--------------------------------------------
+
+1. Grid Container Properties
+
+---------------------------------------------------
+
+1. display : grid;
+2. display : inline-grid;
+
+------------------------------------------------
+
+1. grid-template-columns : Length values (100px, 20%, etc.)
+2. grid-template-columns : Fractional units (1fr, 2fr, etc.)
+3. grid-template-columns : repeat()
+4. grid-template-columns : minmax(min, max)
+5. grid-template-columns : auto-fill
+6. grid-template-columns : auto-fit
+7. grid-template-columns : none (default)
+
+-----------------------------------------------
+1. grid-template-rows : Length values (100px, 20%, etc.)
+2. grid-template-rows : Fractional units (1fr, 2fr, etc.)
+3. grid-template-rows : repeat()
+4. grid-template-rows : minmax(min, max)
+5. grid-template-rows : none (default)
+
+-------------------------------------------------
+
+1. grid-template-areas : 'area-name' (e.g., 'header header header')
+2. grid-template-areas : . (empty cell)
+
+-----------------------------------------------
+
+1. grid-template : Combine grid-template-rows / grid-template-columns / grid-template-areas.
+
+------------------------------------------------
+
+1. grid-column-gap (Deprecated: use column-gap) : Length values (10px, 1em, etc.)
+
+------------------------------------------------
+
+1. grid-row-gap (Deprecated: use row-gap) : Length values (10px, 1em, etc.)
+
+--------------------------------------------------
+
+1. grid-gap (Deprecated: use gap) : Length values (10px, 1em, etc.)
+
+----------------------------------------------------
+1. gap : row-gap column-gap
+
+---------------------------------------------------
+
+1. grid-auto-rows : Length values (100px, auto, minmax(min, max))
+
+--------------------------------------------------
+
+1. grid-auto-columns : Length values (100px, auto, minmax(min, max))
+
+--------------------------------------------------
+
+1. grid-auto-flow : row (default)
+2. grid-auto-flow : column
+3. grid-auto-flow : dense
+4. grid-auto-flow : row dense
+5. grid-auto-flow : column dense
+
+-------------------------------------------------
+
+1. align-items : start
+2. align-items : end
+3. align-items : center
+4. align-items : stretch (default)
+
+--------------------------------------------
+
+1. justify-items : start
+2. justify-items : end
+3. justify-items : center
+4. justify-items : stretch (default)
+
+-------------------------------------------
+
+1. place-items : align-items justify-items
+
+------------------------------------------
+
+1. align-content : start
+2. align-content : end
+3. align-content : center
+4. align-content : stretch (default)
+5. align-content : space-between
+6. align-content : space-around
+7. align-content : space-evenly
+
+------------------------------------------
+
+1. justify-content : start
+2. justify-content : end
+3. justify-content : center
+4. justify-content : stretch (default)
+5. justify-content : space-between
+6. justify-content : space-around
+7. justify-content : space-evenly
+
+------------------------------------------
+
+1. place-content : align-content justify-content
+
+------------------------------------------
+
+2. Grid Item Properties
+
+-----------------------------------------
+
+1. grid-column-start : Grid line number (1, 2, etc.)
+2. grid-column-start : Named grid line
+3. grid-column-start : span n (span across n columns)
+4. grid-column-start : auto
+
+-----------------------------------------
+
+1. grid-column-end : Grid line number (1, 2, etc.)
+2. grid-column-end : Named grid line
+3. grid-column-end : span n (span across n columns)
+4. grid-column-end : auto
+
+----------------------------------------
+
+1. grid-row-start : Grid line number (1, 2, etc.)
+2. grid-row-start : Named grid line
+3. grid-row-start : span n (span across n rows)
+4. grid-row-start : auto
+
+----------------------------------------
+
+1. grid-row-end : Grid line number (1, 2, etc.)
+2. grid-row-end : Named grid line
+3. grid-row-end : span n (span across n rows)
+4. grid-row-end : auto
+
+----------------------------------------
+
+1. grid-column : start-line / end-line
+
+------------------------------------------
+
+1. grid-row : start-line / end-line
+
+----------------------------------------
+
+1. grid-area : grid-row-start / grid-column-start / grid-row-end / grid-column-end
+2. grid-area : Area name (if grid-template-areas is defined)
+
+----------------------------------------
+
+1. align-self : start
+2. align-self : end
+3. align-self : center
+4. align-self : stretch (default)
+
+-------------------------------------
+
+1. justify-self : start
+2. justify-self : end
+3. justify-self : center
+4. justify-self : stretch (default)
+
+-------------------------------------
+
+1. place-self : align-self justify-self
+
+------------------------------------------
+
+3. Grid Template Functions
+
+----------------------------------
+
+a. repeat()
+Repeats a column or row definition.
+
+Example: repeat(3, 1fr)
+b. minmax()
+Defines a range for the size of a grid track.
+
+Example: minmax(100px, 1fr)
+c. auto-fill
+Automatically fills the grid with as many tracks as possible.
+
+Example: repeat(auto-fill, minmax(100px, 1fr))
+d. auto-fit
+Similar to auto-fill, but collapses empty tracks.
+
+Example: repeat(auto-fit, minmax(100px, 1fr))
+
+
+
+
+
+
+
+
