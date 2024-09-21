@@ -1,57 +1,94 @@
-
-.container {
-    width: 90%;
-    height: auto;
-    border: 2px solid red;
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    border: 2px solid transparent;
+}
+header{
     background-color: #fff;
+    height: 70px;
+    color: #333333;
     text-align: center;
+    line-height: 70px;
 }
 
-.container {
-    display: flex;    
-
-    /* flex-direction: row, row-reverse, column, column-reverse */
-    flex-direction: column; 
-
-   /* justify-content: flex-start,flex-end, center,space-between, space-evenly, space-around */
-    justify-content: flex-start;
-
-    /* align-items: flex-start, flex-end, center, baseline, stretch */
-    align-items: stretch; 
-
-    /* flex-wrap: nowrap, wrap, wrap-reverse */
-    flex-wrap: wrap;
- 
-
+header h1{
+    font-size: 24px;
+}
+nav{
+    background-color: #333333;
+    height: 70px;
+    color: white;
+    text-align: center;
+    line-height: 70px;
+}
+nav h1{
+    font-size: 24px;
 }
 
-.item {
-    width: 100px;
-    height: 100px;
-    border-radius: 5px;
+main{
+    background-color: #f2f2f2;
+    width: 60%;
+    height: 500px;
+    text-align: center;
+    line-height: 70px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+main section{
+    background-color: #fff;
+    width: 80%;
+    height: 300px;
    
-  
+    border-radius: 10px;
+    
+}
+section h1{
+    font-size: 24px;
+}
+main article{
+    background-color: #fff;
+    width: 80%;
+    height: 300px;
+   
+    border-radius: 10px;
+}
+article h1{
+    font-size: 24px;
+}
+aside{
+    background-color: #ddd;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 160px;
+    right: 50px;
+    width: 30%;
+    height: 480px;
+}
+aside h1{
+    font-size: 24px;
+}
+footer{
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    position: relative;
+    top: 10px;
 
 }
 
-.item-1{
-    background-color: red;
-}
-.item-2{
-    background-color: green;
-}
-.item-3{
-    background-color: blue;
-}
-.item-4{
-    background-color: yellow;
-}
-.item-5{
-    background-color: orange;
-}
-.item-6{
-    background-color: tomato;
-}
-.item-7{
-    background-color: pink;
+footer h1{
+    font-size: 24px;
 }
