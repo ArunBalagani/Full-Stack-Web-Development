@@ -1,0 +1,47 @@
+<div class="light-container">
+        <div class="light" id="light"></div>
+        <button id="toggleBotton">Switch On</button>
+      </div>
+
+--------------------------------------------------------------------
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f0f0f0;
+      }
+
+      .light-container {
+        text-align: center;
+      }
+
+      .light {
+        width: 500px;
+        height: 500px;
+        background-color: gray;
+        border-radius: 50%;
+        margin: 0 auto;
+      }
+
+      #toggleBotton {
+        margin-top: 20px;
+      }
+
+------------------------------------------------------------------------
+      var light = document.getElementById("light");
+      var toggleBotton = document.getElementById("toggleBotton");
+
+      var isLightOn = false;
+
+      toggleBotton.addEventListener("click", () => {
+        if (isLightOn) {
+          light.style.backgroundColor = "gray";
+          toggleBotton.textContent = "Switch On";
+        } else {
+          light.style.backgroundColor = "yellow";
+          toggleBotton.textContent = "Switch Off";
+        }
+        isLightOn = !isLightOn;
+      });
