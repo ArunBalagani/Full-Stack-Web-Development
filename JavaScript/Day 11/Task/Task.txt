@@ -1,0 +1,18 @@
+Basic Task: 
+
+1.String Task: Create a variable favoriteFood and assign it a string value representing your favorite food. Then, log this string to the console.
+2.Number Task: Declare a variable myAge and assign it your age as a number. Then, log this number to the console.
+3.Boolean Task: Create a variable isStudent and assign it a boolean value that represents whether you are currently a student (true) or not (false). Log this boolean value to the console.
+4.Undefined Task: Declare a variable myPet without assigning any value to it. Log this variable to the console to see the output as undefined.
+5.Null Task: Create a variable carBrand and assign it a null value to represent that you don't currently own a car. Log this variable to the console.
+
+
+console.log("1"+"4"+"1") 
+console.log("A"-"B") 
+console.log("A"-"B"+"1") 
+console.log("A"-"B"+1) 
+console.log("1"-"1") 
+console.log(+"1"+"1"+"1")
+console.log(1 + + "1" + "1") 
+console.log(1 - "1" + "1")
+console.log(+ "") 
