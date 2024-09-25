@@ -1,0 +1,44 @@
+Task 1: Simple Calculator
+Objective: Write a script that acts as a simple calculator. The script should take two numbers and an operator as input and perform the corresponding operation.
+
+Instructions:
+
+Declare three variables: num1, num2, and operator.
+Use a switch statement to perform the operation based on the operator.
++: Add num1 and num2
+-: Subtract num2 from num1
+*: Multiply num1 and num2
+/: Divide num1 by num2
+%: Find the remainder when num1 is divided by num2
+
+
+ 
+Task 2: Print the First 10 Multiples of 5
+Objective: Write a script that uses a for loop to print the first 10 multiples of 5.
+
+Instructions:
+
+Use a for loop to iterate from 1 to 10.
+Print the product of the loop variable and 5.
+
+
+Task 3: Calculate Factorial of a Number
+
+Objective: Write a script that uses a for loop to calculate the factorial of a given number.
+
+Instructions:
+
+Declare a variable for the number.
+Use a for loop to calculate its factorial.
+Print the factorial.
+
+
+Task 4: FizzBuzz
+
+Objective: Write a script that uses a for loop to print numbers from 1 to 100. For multiples of three, print "Fizz" instead of the number and for multiples of five, print "Buzz". For numbers which are multiples of both three and five, print "FizzBuzz".
+
+Instructions:
+
+Use a for loop to iterate from 1 to 100.
+Use conditional statements to check if the current number is a multiple of 3, 5, or both.
+Print the appropriate message based on the condition.
