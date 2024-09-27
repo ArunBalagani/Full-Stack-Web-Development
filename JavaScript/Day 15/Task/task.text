@@ -1,0 +1,47 @@
+Task1: Function to Reverse a String
+Objective: Write a function that takes a string as input and returns the reversed string.
+
+Task 2: 
+Function to Calculate Factorial
+Objective: Write a recursive function that calculates the factorial of a number.
+Instructions:
+
+Define a function named factorial that takes one parameter.
+The function should return the factorial of the number using recursion.
+Call the function with different numbers and print the results.
+
+Task 3: 
+Function to Generate Fibonacci Sequence
+Objective: Write a function that generates the first n numbers in the Fibonacci sequence.
+Instructions:
+
+Define a function named fibonacci that takes one parameter.
+The function should return an array containing the first n Fibonacci numbers.
+Call the function with different values of n and print the results.
+
+Task 4 :
+ Function to Perform Multiple String Operations
+Objective: Write a function that takes a string and returns an object containing the string's length, the string in uppercase, and the string in lowercase.
+Instructions:
+
+Define a function named stringOperations that takes one parameter.
+The function should return an object with the string's length, uppercase version, and lowercase version.
+Call the function with different strings and print the results.
+
+Task 5: 
+Function to Count Vowels in a String
+Objective: Write a function that counts the number of vowels in a given string.
+Instructions:
+
+Define a function named countVowels that takes one parameter: str.
+The function should return the number of vowels in the string.
+Call the function with different strings and print the results.
+
+Task 6:
+Function to Flatten a Nested Array
+Objective: Write a function that flattens a nested array into a single array.
+Instructions:
+
+Define a function named flattenArray that takes one parameter: nestedArray.
+The function should return a single array containing all the elements of the nested arrays.
+Call the function with different nested arrays and print the results.
