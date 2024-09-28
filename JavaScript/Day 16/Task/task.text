@@ -1,0 +1,69 @@
+Task 1: Create and Access Object Properties
+Objective: Create an object representing a book and access its properties.
+Instructions:
+
+Create an object named book with properties: title, author, yearPublished, and genre.
+Print each property to the console using dot and bracket notation.
+
+---------------------------------------------------------------
+
+Task 2: Modify and Delete Object Properties
+Objective: Modify and delete properties of an existing object.
+Instructions:
+
+Create an object named car with properties: make, model, year, and color.
+Change the color property to a new value.
+Delete the year property.
+Print the modified object to the console.
+
+-----------------------------------------------------------------
+
+Task 3: Nested Objects
+Objective: Create an object with nested objects and access their properties.
+Instructions:
+
+Create an object named student with properties: name, age, address (an object with properties: street, city, state), and courses (an object with course names as keys and grades as values).
+Print the student's city and state using dot notation.
+Print the grade for a specific course using bracket notation.
+
+--------------------------------------------------------------------
+
+Task 4: Looping Through Object Properties
+Objective: Loop through the properties of an object and print them.
+Instructions:
+
+Create an object named employee with properties: name, position, department, and salary.
+Use a for...in loop to iterate through the properties and print each key and value.
+
+
+-----------------------------------------------------------------------
+
+Task 5: Using Methods in Objects
+Objective: Add methods to an object and call them.
+Instructions:
+
+Create an object named calculator with properties num1 and num2.
+Add methods add, subtract, multiply, and divide to the object, each performing the corresponding arithmetic operation on num1 and num2.
+Call each method and print the result.
+
+-----------------------------------------------------------------------
+
+
+Task 6 : Nested Object Iteration
+Objective: Create an object with nested objects and use nested for...in loops to print all properties and their values.
+Instructions:
+
+Create an object named company with properties: name, location, employees (which is an object with employee names as keys and their roles as values).
+Use a for...in loop to iterate through the properties of the company object.
+If the property is employees, use another for...in loop to iterate through the employee names and roles.
+
+
+-----------------------------------------------------------------------------
+
+Task 7 :Calculate Average Age
+Objective: Create an object with a list of people and their ages, then use a for...in loop to calculate the average age.
+Instructions:
+
+Create an object named people with names as keys and ages as values.
+Use a for...in loop to iterate through the people object and calculate the average age.
+Print the average age.
