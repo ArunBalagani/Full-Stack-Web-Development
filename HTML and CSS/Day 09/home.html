@@ -20,48 +20,44 @@
         padding: 10px;
         border-radius: 10px;
       }
-      #marquee{
+      #marquee {
         color: yellow;
         flex-grow: 0.5;
       }
-      img{
+      img {
         width: 250px;
         height: 250px;
         border-radius: 50%;
       }
-      main{
-        /* border: 2px solid red; */
+      main {
         display: flex;
         background-color: rgb(60, 59, 59);
         color: white;
         padding: 120px;
       }
-      #info{
-        /* border: 2px solid; */
+      #info {
         flex-grow: 0.4;
-        flex-basis: 0;
         text-align: center;
       }
-      #about{
-        /* border: 2px solid blue; */
+      #about {
         flex-grow: 0.7;
-        flex-basis: 0;
         font-size: larger;
-
-
       }
-      footer{
+      footer {
         background-color: rgb(92, 88, 88);
         padding: 25px;
         text-align: center;
         color: white;
       }
-      a{
+      a {
         text-decoration: none;
         color: white;
       }
-      a:hover{
+      a:hover {
         color: yellow;
+      }
+      table{
+        margin: 30px;
       }
     </style>
   </head>
@@ -71,43 +67,87 @@
         <div>
           <div><a href="./home.html">Home</a></div>
           <div><a href="./skill.html">Skills</a></div>
-          <div> <a href="./project.html">Project</a></div>
-          <div> <a href="./contact.html">Contact</a></div>
+          <div><a href="./project.html">Project</a></div>
+          <div><a href="./contact.html">Contact</a></div>
         </div>
         <div id="marquee">
-          <marquee behavior="" direction=""> Hema Coding School</marquee>
+          <marquee behavior="" direction="">Hema Coding School</marquee>
         </div>
       </nav>
     </header>
     <main>
-        <section id="info">
-            <img src="../Day 04/dandelion-1557110_640.jpg" alt="">
-            <h2>Software Developer</h2>
-            <article>
-                Experienced software engineer with a focus on building engaging &accessible experiences
-            </article>
-        </section>
-        <section id="about">
-            <h2>About</h2>
-            <article>
-                I am a dedicated and passionate software engineer with over a decade
+      <section id="info">
+        <img src="../Day 04/dandelion-1557110_640.jpg" alt="" />
+        <h2>Software Developer</h2>
+        <article>
+          Experienced software engineer with a focus on building engaging
+          & accessible experiences.
+        </article>
+      </section>
+      <section id="about">
+        <h2>About</h2>
+        <article>
+          I am a dedicated and passionate software engineer with over a decade
           of experience specializing in front-end development. Throughout my
           career, I have developed a strong proficiency in HTML, CSS,
           JavaScript, and React, consistently delivering high-quality,
-          user-friendly web applications. My technical expertise is complemented
-          by my experience as a front-end development trainer, where I have
-          successfully mentored and guided aspiring developers. I am now eagerly
-          seeking new opportunities to leverage my skills and contribute to
-          innovative projects within a dynamic team. My approach to software
-          development blends technical precision with creative problem-solving,
-          ensuring that the solutions I build are not only functional but also
-          visually compelling. I am excited to bring my expertise, enthusiasm,
-          and collaborative spirit to a forward-thinking organization where I
-          can continue to grow and make a meaningful impact.
-
-            </article>
-        </section>
+          user-friendly web applications.
+        </article>
+        <table id="element" border="1">
+          <thead>
+            <tr>
+              <th>S.No</th>
+              <th>College/School</th>
+              <th>Score</th>
+              <th>Passout Year</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </section>
     </main>
-    <footer>@copyright, This is portfolio</footer>
+
+    <footer>&copy; This is a portfolio</footer>
+
+    <script>
+      // Get the table body element
+      var tableBody = document.getElementById("element").getElementsByTagName('tbody')[0];
+
+      // Education data array (S.No, College/School, Score, Passout Year)
+      var educationData = [
+        { sNo: 1, school: "Sri Vidhya Jyothi High School", score: "83%", year: 2012 },
+        { sNo: 2, school: "Sri Venkateshwara Junior College", score: "83%", year: 2014 },
+        { sNo: 3, school: "Maharshi Degree College", score: "70%", year: 2017 }
+      ];
+
+      // Iterate through the educationData array and append each as a new row
+      educationData.forEach(function(item) {
+        var newRow = document.createElement("tr");
+
+        // Create and append S.No cell
+        var cell1 = document.createElement("td");
+        cell1.textContent = item.sNo;
+        newRow.appendChild(cell1);
+
+        // Create and append College/School cell
+        var cell2 = document.createElement("td");
+        cell2.textContent = item.school;
+        newRow.appendChild(cell2);
+
+        // Create and append Score cell
+        var cell3 = document.createElement("td");
+        cell3.textContent = item.score;
+        newRow.appendChild(cell3);
+
+        // Create and append Passout Year cell
+        var cell4 = document.createElement("td");
+        cell4.textContent = item.year;
+        newRow.appendChild(cell4);
+
+        // Append the new row to the table body
+        tableBody.appendChild(newRow);
+      });
+    </script>
   </body>
 </html>
