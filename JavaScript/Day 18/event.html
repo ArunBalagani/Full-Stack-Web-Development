@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="console.log('This is Inline button')">
+      In Line Button
+    </button>
+
+    <button id="prop-button">Prop Base Button</button>
+    <button id="add-event-listener">Add Event Listener</button>
+    <form id="event-form">
+      <input type="text" id="user-name" />
+      <input type="submit" />
+    </form>
+    <h2 id="user-data"></h2>
+    <h2 id="store-data"></h2>
+    <script>
+      var propButton = document.getElementById("prop-button");
+      propButton.onclick = function () {
+        console.log("This is prop based button");
+      };
+      var propButton = document.getElementById("prop-button");
+
+      propButton.onmouseover = function () {
+        console.log("This is prop based button");
+      };
+
+      var addEvent = document.getElementById("add-event-listener");
+      addEvent.addEventListener("click", function (event) {
+        console.log(event);
+        addName("Mahesh")
+        console.log("This is Add event Listener Button");
+      });
+      function addName(name){
+        console.log("My Name is " + name )
+      }
+
+      addEvent.addEventListener("mouseover", function () {
+        addName("Hema")
+
+        addEvent.style.backgroundColor = "Blue";
+        addEvent.style.color = "White";
+        console.log("The mouse pointer is hovered");
+      });
+
+      addEvent.addEventListener("mouseout", function () {
+        addEvent.style.backgroundColor = "";
+        addEvent.style.color = "";
+        console.log("The mouse pointer is out");
+      });
+
+      addEvent.addEventListener("keydown", function (event) {
+        console.log(event);
+        console.log("The key word id pressed " + event.keyCode);
+      });
+
+      var addEventForm = document.getElementById("event-form");
+      addEventForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+        console.log(event);
+        console.log(event.type);
+        console.log(event.target);
+        console.log("This is submit event");
+
+        var userName = document.getElementById("user-name").value;
+        // document.getElementById("user-data").textContent = userName;
+        // console.log(userName);
+
+        var newParagraph = document.createElement("p");
+
+        newParagraph.textContent = userName;
+        document.getElementById("store-data").appendChild(newParagraph)
+      });
+    </script>
+  </body>
+</html>

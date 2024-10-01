@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        .main-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            background-color: lightgray;
+            padding: 20px;
+            height: 100vh;
+        }
+
+        h1 {
+            width: 100%;
+            text-align: center;
+        }
+
+        #register-container,
+        #preview-container {
+            flex: 1 1 400px;
+            padding: 20px;
+            /* background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+        }
+
+        #preview-container {
+            background-color: #f1f1f1;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="date"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #45a049;
+        }
+
+        .error {
+            color: red;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <h1>Registration Form</h1>
+        <div id="register-container">
+            <form id="event-form">
+                <label for="user-name">Name : </label>
+                <input type="text" id="user-name" />
+                <span class="error" id="name-error"></span>
+                <br><br>
+
+                <label for="user-mobile">Mobile : </label>
+                <input type="number" id="user-mobile" />
+                <span class="error" id="mobile-error"></span>
+                <br><br>
+
+                <label for="gender">Gender : </label>
+                <input type="radio" id="male" name="gender" value="male" />
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female" />
+                <label for="female">Female</label>
+                <span class="error" id="gender-error"></span>
+                <br><br>
+
+                <label for="dob">DOB : </label>
+                <input type="date" id="dob" />
+                <span class="error" id="dob-error"></span>
+                <br><br>
+
+                <label for="address">Address : </label>
+                <textarea name="address" id="address" cols="30" rows="5"></textarea>
+                <span class="error" id="address-error"></span>
+                <br><br>
+
+                <input type="checkbox" name="terms" id="terms">Accept terms and conditions.
+                <span class="error" id="terms-error"></span>
+                <br><br>
+
+                <input type="submit" value="Submit" />
+                <input type="reset" />
+            </form>
+        </div>
+
+        <div id="preview-container">
+            <h2>Preview:</h2>
+            <div id="user-data"></div>
+        </div>
+    </div>
+
+    <script>
+        var addEventForm = document.getElementById("event-form");
+        addEventForm.addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            // Form validation
+            var isValid = true;
+            var name = document.getElementById("user-name").value;
+            var mobile = document.getElementById("user-mobile").value;
+            var gender = document.querySelector('input[name="gender"]:checked');
+            var dob = document.getElementById("dob").value;
+            var address = document.getElementById("address").value;
+            var terms = document.getElementById("terms").checked;
+
+            // Reset error messages
+            document.getElementById("name-error").textContent = "";
+            document.getElementById("mobile-error").textContent = "";
+            document.getElementById("gender-error").textContent = "";
+            document.getElementById("dob-error").textContent = "";
+            document.getElementById("address-error").textContent = "";
+            document.getElementById("terms-error").textContent = "";
+
+            if (name === "") {
+                document.getElementById("name-error").textContent = "Name is required";
+                isValid = false;
+            }
+            if (mobile === "") {
+                document.getElementById("mobile-error").textContent = "Mobile is required";
+                isValid = false;
+            }
+            if (!gender) {
+                document.getElementById("gender-error").textContent = "Gender is required";
+                isValid = false;
+            }
+            if (dob === "") {
+                document.getElementById("dob-error").textContent = "Date of Birth is required";
+                isValid = false;
+            }
+            if (address === "") {
+                document.getElementById("address-error").textContent = "Address is required";
+                isValid = false;
+            }
+            if (!terms) {
+                document.getElementById("terms-error").textContent = "You must accept the terms";
+                isValid = false;
+            }
+
+            if (isValid) {
+                // Display the preview in the preview container
+                document.getElementById("user-data").innerHTML = `
+                    <p><strong>Name:</strong> ${name}</p>
+                    <p><strong>Mobile:</strong> ${mobile}</p>
+                    <p><strong>Gender:</strong> ${gender.value}</p>
+                    <p><strong>Date of Birth:</strong> ${dob}</p>
+                    <p><strong>Address:</strong> ${address}</p>
+                `;
+            }
+        });
+    </script>
+</body>
+
+</html>
