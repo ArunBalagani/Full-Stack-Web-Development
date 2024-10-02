@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #outer{
+        background-color: red;
+        width: 300px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #middle{
+        background-color: blue;
+        width: 200px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #inner{
+        background-color: rgb(11, 221, 92);
+        width: 100px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+</style>
+<body>
+    <div id="outer">
+        <div id="middle">
+            <div id="inner">Propagation</div>
+        </div>
+    </div>
+    <script>
+       var innerTag= document.getElementById('inner')
+       innerTag.addEventListener("click",function(event){
+        event.stopPropagation()
+        console.log("This is inner element green")
+       })
+
+       var middleTag = document.getElementById("middle");
+       middleTag.addEventListener("click",function(){
+        console.log("This in middle element Blue")
+       })
+
+       var outerTag = document.getElementById("outer");
+       outerTag.addEventListener("click",function(){
+        console.log("This in outer element Red")
+       })
+    </script>
+</body>
+</html>

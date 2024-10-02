@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #list{
+            background-color: red;
+        }
+        #list li{
+            background-color: aqua;
+            border: 1px solid;
+        }
+    </style>
+</head>
+<body>
+    <from id="list">
+        <input type="text">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </form>
+
+    <button id="add-item-button">Add Item</button>
+    <script>
+        var ulTag = document.getElementById("list")
+        ulTag.addEventListener("click",function(event){
+            console.log(event.target)
+            console.log("This is UL Tag Event")
+        })
+        var addEventButton = document.getElementById("add-item-button");
+        addEventButton.addEventListener("click",function(){
+            console.log("This is button Item")
+            var liTag = document.createElement("li");
+            console.log(document.querySelectorAll("#list li").length)
+            liTag.textContent = "Item " + (document.querySelectorAll("#list li").length + 1);
+            document.getElementById("list").appendChild(liTag)
+        })
+    </script>
+</body>
+</html>
