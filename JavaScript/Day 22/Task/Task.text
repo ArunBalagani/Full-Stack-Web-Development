@@ -1,0 +1,9 @@
+Task 1: Create a Vehicle constructor function with a method start that returns "Vehicle started". 
+Then create a Car constructor function that inherits from Vehicle and adds a method drive that returns 
+"Car is driving".
+
+-----------------------------------------------------------------------------
+
+Task 2: Create a Person object with properties name and age, and a method greet that returns a greeting
+ message. Use Object.create to create a new object student that inherits from Person and add a study method 
+ to student.
