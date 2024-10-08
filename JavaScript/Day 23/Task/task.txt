@@ -1,0 +1,9 @@
+Task 1: Create a Car class with properties make, model, and year. Add a method start that returns "The car has
+ started." Then, create a ElectricCar class that inherits from Car and adds a property batteryLevel and a method 
+ charge that returns "The car is charging."
+
+
+
+Task 2: Create a Rectangle class with properties width and height. Add a method area that returns the area of the 
+rectangle. Then, create a Square class that inherits from Rectangle and overrides the area method to correctly 
+calculate the area of a square.

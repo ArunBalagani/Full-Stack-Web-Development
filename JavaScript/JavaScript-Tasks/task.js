@@ -47,7 +47,7 @@ Output: "111"
 Explanation: The unary + converts "1" to 1, then concatenates it with "1" and "1" as strings.
 
 console.log(1 + + "1" + "1")
-Output: "111"
+Output: "21"
 Explanation: + "1" converts the string to 1, then 1 + 1 results in 2, followed by concatenating with "1" to give "21". (This should be corrected to console.log(1 + 1 + "1"), which results in "21".)
 
 console.log(1 - "1" + "1")

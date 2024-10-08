@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Manipulation Example</title>
+</head>
+
+<body>
+    <h1 id="title">Original Title</h1>
+    <p class="info">Info 1</p>
+    <p class="info">Info 2</p>
+    <p class="info">Info 3</p>
+    <ul id="element"></ul>
+
+    <script>
+        // Setting the title
+        document.getElementById("title").textContent = "Updated Title";
+
+        // Creating and adding a new list item
+        const newItem = document.createElement("li");
+        newItem.textContent = "New List Item";
+        document.getElementById("element").appendChild(newItem);
+
+        // Modifying styles
+        document.querySelectorAll(".info").forEach((info) => {
+            info.style.color = "green";
+            info.textContent += " - Updated";
+        });
+
+        // Adding an event listener
+        document.getElementById("title").addEventListener("click", () => {
+            alert("Title was clicked!");
+        });
+    </script>
+</body>
+
+</html>
