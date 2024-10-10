@@ -1,0 +1,59 @@
+1. Fibonacci Sequence
+Description: Write a program that generates the Fibonacci sequence up to a specified number.
+
+2. Factorial Calculation
+Description: Create a function that calculates the factorial of a given number.
+
+3. Palindrome Checker
+Description: Write a function that checks if a given string is a palindrome (reads the same backward as forward).
+
+4. Anagram Checker
+Description: Write a function to determine if two strings are anagrams of each other.
+
+5. Prime Number Checker
+Description: Create a function that checks if a number is prime.
+
+6. Sum of Array Elements
+Description: Write a program that calculates the sum of all elements in an array.
+
+7. Finding the Maximum Element in an Array
+Description: Create a function that returns the maximum number from an array of numbers.
+
+8. Sorting an Array
+Description: Write a function that sorts an array of numbers in ascending or descending order.
+
+9. Counting Vowels and Consonants
+Description: Create a function that counts the number of vowels and consonants in a given string.
+
+10. Reverse a String
+Description: Write a function that reverses a given string.
+
+11. Removing Duplicates from an Array
+Description: Create a function that removes duplicate values from an array.
+
+12. Finding the Length of the Longest Word
+Description: Write a function that finds the length of the longest word in a sentence.
+
+13. Finding the Common Elements in Two Arrays
+Description: Create a function that finds common elements in two arrays.
+
+14. Sum of Odd and Even Numbers
+Description: Write a program that calculates the sum of odd and even numbers from a given array.
+
+15. Converting Celsius to Fahrenheit
+Description: Create a function that converts temperature from Celsius to Fahrenheit.
+
+16. FizzBuzz Problem
+Description: Write a program that prints numbers from 1 to 100. For multiples of three, print "Fizz" instead of the number, and for multiples of five, print "Buzz". For numbers that are multiples of both three and five, print "FizzBuzz".
+
+17. Finding the GCD of Two Numbers
+Description: Create a function that finds the greatest common divisor (GCD) of two numbers.
+
+18. Binary Search
+Description: Write a function that implements binary search on a sorted array.
+
+19. Implementing a Queue
+Description: Create a simple queue using an array, with methods to enqueue, dequeue, and check if the queue is empty.
+
+20. Tic-Tac-Toe Game
+Description: Create a simple Tic-Tac-Toe game that can be played in the console
