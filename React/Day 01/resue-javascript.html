@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome to React js classes 01</h1>
+    <h1 id="root" style="color: red;"></h1>
+    <script>
+        let reuseJavascript =()=>{
+            // document.getElementById('root').innerHTML = "Welcome to React js classes 01"
+            let newElement= document.createElement('div')
+            newElement.textContent = "Welcome to React js classes 01";
+            document.getElementById('root').appendChild(newElement)
+
+        }
+        reuseJavascript()
+        reuseJavascript()
+        reuseJavascript()
+
+
+   
+
+
+    </script>
+
+</body>
+</html>

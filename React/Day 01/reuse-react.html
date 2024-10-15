@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+</head>
+<body>
+    <h1 id="root"></h1>
+    <script type="text/babel">
+        // let reuseReactElement =React.createElement('div',{id:1,style:{color:'red'}},"Welcome to reactjs classes")
+                // let reuseReactElement =React.createElement('div',{id:1,style:{color:'red'}},"Welcome to reactjs classes",React.createElement('div',{id:1,style:{color:'red'}},"Welcome to reactjs classes"),React.createElement('div',{id:1,style:{color:'red'}},"Welcome to reactjs classes"));
+
+                let newReactElement =()=>{
+                  let h1RefTag =  <div id="1" style={{color:'green'}}>Welcome to reactjs classes</div>;
+                  return h1RefTag
+                }
+                let mainContent = ()=>{
+                    let newReactTag = <>
+                    <div>{newReactElement()}</div>
+                    <div>{newReactElement()}</div>
+                    <div>{newReactElement()}</div>
+                    <div>{newReactElement()}</div>
+                    <div>{newReactElement()}</div>
+                    <div>{newReactElement()}</div>
+                    <div>{newReactElement()}</div>
+                    <div>{newReactElement()}</div>
+                    </>
+
+
+                    // ReactDOM.render(newReactTag,document.getElementById("root"))
+                    ReactDOM.createRoot(document.getElementById("root")).render(newReactTag)
+                }
+                mainContent()
+
+        // ReactDOM.render(newReactElement(),document.getElementById("root"))
+
+    </script>
+</body>
+</html>
