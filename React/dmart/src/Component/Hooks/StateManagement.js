@@ -21,17 +21,23 @@ let divide = () => { // 0 / 2 = 0, 1 / 2 = 0.5, 2 / 2 = 1, 3 / 2 = 1.5, 4 / 2 = 
     setState(state / 2);
 }
 
+let reset = () => {
+  setState(0); 
+}
+
 
   return (
     <div className="train-info">
-      <h1>State Management Count : {state}</h1>
+      <h1>State Management Count : </h1>
+        <h2>{state}</h2>
 
             <button className="btn btn-primary" onClick={increment}>Count++</button>
             <button className="btn btn-secondary" onClick={decrement}>Count--</button>
             <button className="btn btn-success" onClick={multiply}>Count**</button>
             <button className="btn btn-danger" onClick={divide}>Count//</button>
-
-
+            <button className="btn btn-warning"  onClick={reset}>Reset</button>
+            
+            
     </div>
   );
 };
