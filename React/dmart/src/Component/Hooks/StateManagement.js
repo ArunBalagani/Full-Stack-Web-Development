@@ -31,10 +31,10 @@ let reset = () => {
       <h1>State Management Count : </h1>
         <h2>{state}</h2>
 
-            <button className="btn btn-primary" onClick={increment}>Count++</button>
-            <button className="btn btn-secondary" onClick={decrement}>Count--</button>
-            <button className="btn btn-success" onClick={multiply}>Count**</button>
-            <button className="btn btn-danger" onClick={divide}>Count//</button>
+            <button className="btn btn-primary" onClick={increment}>increment</button>
+            <button className="btn btn-secondary" onClick={decrement}>decrement</button>
+            <button className="btn btn-success" onClick={multiply}>multiply</button>
+            <button className="btn btn-danger" onClick={divide}>divide</button>
             <button className="btn btn-warning"  onClick={reset}>Reset</button>
             
             
