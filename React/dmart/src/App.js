@@ -2,14 +2,21 @@ import "./App.css";
 // import  ClassBased  from "./Component/ClassBased.js";
 // import  FunctionBased  from "./Component/FunctionBased.js";
 
-import StateManagement from './Component/Hooks/StateManagement.js'
+// import StateManagement from "./Component/Hooks/StateManagement.js";
+// import Groceries from "./Component/Inventory Dhashboard/Groceries.js";
+// import ListItem from "./Component/Inventory Dhashboard/ListItem.js";
+import TodoApp from "./Component/inputTextDisplay";
+
 
 function App() {
-
-
-  return(
-    <StateManagement/>
-  )
+  return (
+    <div>
+      {/* <StateManagement /> */}
+      {/* <Groceries /> */}
+      {/* <ListItem/> */}
+      <TodoApp />
+    </div>
+  );
   // let showComponent = false;
   // if(showComponent){
   //   console.log("Class")
