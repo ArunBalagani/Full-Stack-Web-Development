@@ -39,9 +39,9 @@ function TodoApp() {
 
       <button onClick={handleSubmit}> ADD </button>
 
-      <div>
+      <div className="preview-container">
         {todos.map((todo, index) => (
-          <p key={index}>{todo}</p>       // Display each todo as a new line
+          <p key={index} className="preview-text">{todo}</p>       // Display each todo as a new line
         ))}
       </div>
 
