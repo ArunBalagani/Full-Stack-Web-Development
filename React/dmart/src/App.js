@@ -1,37 +1,47 @@
 import "./App.css";
+import './Component/styles.css'
+import { useState } from "react";
 // import  ClassBased  from "./Component/ClassBased.js";
 // import  FunctionBased  from "./Component/FunctionBased.js";
 
 // import StateManagement from "./Component/Hooks/StateManagement.js";
-// import Groceries from "./Component/Inventory Dhashboard/Groceries.js";
-// import ListItem from "./Component/Inventory Dhashboard/ListItem.js";
-// import TodoApp from "./Component/inputTextDisplay";
-import Electronics from './Component/InventoryDhashboard/Electronics.js'
+// import Groceries from "./Component/InventoryDhashboard/Groceries.js";
+// import ListItem from "./Component/InventoryDhashboard/ListItem.js";
 
+// import Electronics from './Component/InventoryDhashboard/Electronics.js'
+// import ComputorAccessories from "./Component/InventoryDhashboard/ComputorAccessories.js";
+// import Stand from "./Component/InventoryDhashboard/Stand.js";
+import Jewellery from "./Component/InventoryDhashboard/Jewellery.js";
 
 function App() {
-
-  return(
+  let [state, setState] = useState(false);
+  return (
     <div>
-    <div className='nav-bar'>
-      <div className='logo'>
-        <img src="https://logowik.com/content/uploads/images/dmart-avenue-supermarts4302.jpg" alt=""/>
+      <div className="nav-bar">
+        <div className="logo">
+          <img src="https://logowik.com/content/uploads/images/dmart-avenue-supermarts4302.jpg" />
+        </div>
+        <div className="nav-link">Home</div>
+        <div className="nav-link">Home</div>
+        <div className="nav-link">Home</div>
+        <div className="nav-link">Home</div>
       </div>
-      <div className="nav-link">Home</div>
-      <div className="nav-link">Home</div>
-      <div className="nav-link">Home</div>
-      <div className="nav-link">Home</div>
+      {/* <Electronics/> */}
+      <Jewellery/>
+      {/* {state ? <ComputorAccessories /> : <Stand />}
 
+      <div className="train-info">
+        <button onClick={() => setState(true)}>Computor Accessories</button>
+        <button onClick={() => setState(false)}>Stand</button>
+      </div> */}
     </div>
-    <Electronics/>
-</div>
-  )
+  );
+
   // return (
   //   <div>
   //     {/* <StateManagement /> */}
   //     {/* <Groceries /> */}
-  //     {/* <ListItem/> */}
-  //     {/* <TodoApp /> */}
+  //     <ListItem/>
   //   </div>
   // );
   // let showComponent = false;

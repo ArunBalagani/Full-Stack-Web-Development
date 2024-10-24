@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Electronics.css";
 
 const Electronics = () => {
@@ -27,6 +27,9 @@ const Electronics = () => {
         setEletronic(data);
       });
   };
+  // useEffect(()=>{
+  //   getElectronics()
+  // },[electronic])
   return (
     <div className="container">
       <div className="electronic-container">
@@ -37,7 +40,7 @@ const Electronics = () => {
 
           return (
             <div className="device-container">
-              <img src={electro.image} alt="" width="200px" height="200px" />
+              <img src={electro.image} width="200px" height="200px" />
               <h2>{electro.title}</h2>
               <div>{electro.description}</div>
               <h3>Price: {electro.price}</h3>
