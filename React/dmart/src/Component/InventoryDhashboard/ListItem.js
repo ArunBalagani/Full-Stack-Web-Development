@@ -12,7 +12,7 @@ function ListItem() {
             return(
                 <div>
                 <div>{item.name}</div>
-                <img src={item.image} alt= {item.image} width="200px" height="200px"/>
+                <img src={item.image} width="200px" height="200px"/>
                 </div>
             )
         })}</div>
