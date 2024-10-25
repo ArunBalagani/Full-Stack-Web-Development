@@ -28,6 +28,7 @@ const SalesReports = () => {
             <button onClick={handleSalesReport}>Submit</button>
         </form>
         <h3 ref={displayNameRef}></h3>
+        
         {/* <h3>{productId.current}</h3> */}
 
     </div>

@@ -1,31 +1,62 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import "../styles.css";
 
 const MonthlySalesReport = () => {
-    // let [formData, setFormData] = useState("Mahesh")
+  // State to store product list and form input
+  const [products, setProducts] = useState([]);
+  const [formInput, setFormInput] = useState({
+    productName: '',
+    productId: ''
+  });
 
-    let [formData, setFormData] = useState([{
-        productName:'',
-        productId:''
-    }])
+  // Update form input values
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormInput({ ...formInput, [name]: value });
+  };
+
+  // Submit form and add product
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Only add if fields are filled
+    if (formInput.productName && formInput.productId) {
+      setProducts([...products, formInput]);
+      setFormInput({ productName: '', productId: '' }); // Reset form fields
+    }
+  };
 
   return (
-    <div className="train-info">
-      <h2>Controlled Component</h2>
+    <div className="product-info">
+      <h1>Controlled Component</h1>
 
-      <form>
+      <form onSubmit={handleSubmit}>
         <div>
-          <input type="text" placeholder="Enter Product Name" onChange={(e)=>setFormData({...formData,productName:e.target.value})}/>
+          <input
+            type="text"
+            name="productName"
+            placeholder="Enter Product Name"
+            value={formInput.productName}
+            onChange={handleInputChange}
+          />
         </div>
         <div>
-          <input type="number" placeholder="Enter Product Id" onChange={(e)=>setFormData({...formData,productId:e.target.value})} />
+          <input
+            type="number"
+            name="productId"
+            placeholder="Enter Product Id"
+            value={formInput.productId}
+            onChange={handleInputChange}
+          />
         </div>
-        <button>Submit</button>
+        <button type="submit">Add Product</button>
       </form>
 
-      <h2>{formData.productName}</h2>
-      <h2>{formData.productId}</h2>
-
+      <h2>Sales Report</h2>
+      {products.map((product, index) => (
+        <div key={index}>
+          <h3>Product Name: {product.productName}, Product Id: {product.productId}</h3>
+        </div>
+      ))}
     </div>
   );
 };
