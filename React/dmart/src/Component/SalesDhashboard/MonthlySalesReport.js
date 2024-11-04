@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import {Link, Outlet} from 'react-router-dom'
 import "../styles.css";
 
 const MonthlySalesReport = () => {
@@ -26,7 +27,15 @@ const MonthlySalesReport = () => {
   };
 
   return (
+
+   <div>
+    <div className="aside-menu">
+        <Link to="usereducer">UserReducer</Link>
+        <Link to="shoppingcart">Shopping Cart</Link>
+        <Outlet/>
+    </div>
     <div className="product-info">
+     
       <h1>Controlled Component</h1>
 
       <form onSubmit={handleSubmit}>
@@ -57,6 +66,7 @@ const MonthlySalesReport = () => {
           <h3>Product Name: {product.productName}, Product Id: {product.productId}</h3>
         </div>
       ))}
+    </div>
     </div>
   );
 };

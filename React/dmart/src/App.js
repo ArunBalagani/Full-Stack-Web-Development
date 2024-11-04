@@ -14,10 +14,10 @@ import ComputorAccessories from "./Component/InventoryDhashboard/ComputorAccesso
 import Jewellery from "./Component/InventoryDhashboard/Jewellery.js";
 // import UseRefObject from "./Component/Hooks/UseRefObject.js";
 import SalesReports from './Component/SalesDhashboard/SalesReports.js'
-// import MonthlySalesReport from './Component/SalesDhashboard/MonthlySalesReport.js'
-// import UseReducer from "./Component/Hooks/UseReducer.js";
+import MonthlySalesReport from './Component/SalesDhashboard/MonthlySalesReport.js'
+import UseReducer from "./Component/Hooks/UseReducer.js";
 
-// import ShoppingCart from './Component/AvailableProduct/ShoppingCart'
+import ShoppingCart from './Component/AvailableProduct/ShoppingCart'
 
 // import UseMemo from './Component/Hooks/UseMemo.js'
 
@@ -43,6 +43,7 @@ function App() {
     <Link to="/jewellery" className="nav-link">Jewellery</Link>
     <Link to="/sales-reports" className="nav-link">Sales Reports</Link>
     <Link to="/device" className="nav-link">Device</Link>
+    <Link to="/monthlysales-report" className="nav-link">MonthlySalesReport</Link>
 
 
 
@@ -62,6 +63,11 @@ function App() {
         <Route path="computor-accessories" element={<ComputorAccessories/>}/>
         </Route>
 
+        <Route path="/monthlysales-report" element={<MonthlySalesReport/>}>
+        <Route path="usereducer" element={<UseReducer/>}/>
+        <Route path="shoppingcart" element={<ShoppingCart/>}/>
+        
+        </Route>
 
 
       </Routes>

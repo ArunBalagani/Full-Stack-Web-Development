@@ -31,7 +31,7 @@ const UseReducer = () => {
 //   console.log(dispatch)
 
   return (
-    <div className="train-info">
+    <div className="product-info">
       <div>UseReducer</div>
 
       <h2>{state}</h2>
