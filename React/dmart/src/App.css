@@ -1,3 +1,4 @@
+
 .nav-bar{
   background-color: rgb(15, 16, 15);
   display: flex;
@@ -10,6 +11,9 @@
   padding: 10px;
   border-radius: 10px;
   font-weight: bold;
+  text-decoration: none;
+    color: white;
+
 }
 
 .nav-link:hover{
