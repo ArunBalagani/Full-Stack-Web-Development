@@ -1,0 +1,29 @@
+/* src/components/Header/Header.css */
+
+header {
+    background-color: #333;
+    padding: 1rem;
+    color: #fff;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  nav {
+    margin-top: 0.5rem;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    color: #f0a500;
+  }
+  
