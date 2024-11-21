@@ -1,6 +1,9 @@
 console.log("Event 1")
 
 
+// console.log("Event 1")
+
+
 // let fs = require("fs")
 
 // fs.readFile('example.txt',"utf8",(err,data)=>{
@@ -33,11 +36,11 @@ console.log("Event 1")
 // orderAndConfirmCake()
 
 
-console.log("Event 1")
+// console.log("Event 1")
 
 
-setTimeout(function(){
-    console.log("Event 2")
-},5000)
+// setTimeout(function(){
+//     console.log("Event 2")
+// },5000)
 
-console.log("Event 3")
+// console.log("Event 3")

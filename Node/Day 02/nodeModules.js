@@ -1,3 +1,6 @@
+
+
+// -------------------------------------------------------
 // let fs = require('fs')
 // // console.log(fs)
 
@@ -50,16 +53,16 @@
 // })
 
 
-let http = require('http')
+// let http = require('http')
 // console.log(http)
 
-let server = http.createServer((req, res)=>{
+// let server = http.createServer((req, res)=>{
     // console.log(res)
-    res.writeHead(200,{'Content-type':'text/plain'})
-    res.end("Welcome to Hema coding school")
-})
-let PORT = 3000;
-let HOSTNAME = '127.0.0.12'
-server.listen(PORT,()=>{
-    console.log(`Server has started http://${HOSTNAME}:${PORT}`)
-})
+    // res.writeHead(200,{'Content-type':'text/plain'})
+    // res.end("Welcome to Hema coding school")
+// })
+// let PORT = 3000;
+// let HOSTNAME = '127.0.0.12'
+// server.listen(PORT,()=>{
+    // console.log(`Server has started http://${HOSTNAME}:${PORT}`)
+// })
