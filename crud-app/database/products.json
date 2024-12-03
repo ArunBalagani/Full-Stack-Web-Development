@@ -1,0 +1,27 @@
+{
+    "_id": "ObjectId",
+    "name": "Apple iPhone 14",
+    "description": "Latest Apple iPhone with A15 Bionic chip",
+    "price": 99999.99,
+    "brand": "Apple",
+    "category": "Mobiles",
+    "images": ["image1.jpg", "image2.jpg"],
+    "stock": 50,
+    "rating": 4.5,
+    "numReviews": 123,
+    "variants": [
+      {
+        "color": "Black",
+        "size": "128GB",
+        "stock": 20
+      },
+      {
+        "color": "White",
+        "size": "256GB",
+        "stock": 15
+      }
+    ],
+    "createdAt": "2024-11-22T10:00:00Z",
+    "updatedAt": "2024-11-22T12:00:00Z"
+  }
+  
